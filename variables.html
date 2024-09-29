@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les variables</title>
+</head>
+<body>
+    <h1>Les variables</h1>
+    <ul><u><strong>Les types des variables</strong></u></ul>
+
+    <ul>
+        <li>Les variables sont la base de la programmation . Nous les retrouvons 
+            notamment dans tous les concepts plus avancés de programmation .
+             Il est même dit : Il serait même inutile de programmer sans variable.</li>
+    </ul>
+    <ul><u><strong>Qu’est ce qu’une variable ?</strong></u></ul>
+
+    <ul>
+        <li>Les variables sont un moyen de stocker en mémoire des données qui peuvent changer dans le temps.</li>
+    </ul>
+    <ul><u><strong>Comment créer une variable ?</strong></u></ul>
+
+    <ul>
+        <li>En JavaScript, la définition d'une variable 
+            ( c’est à dire, lorsque l’on crée une variable) se fait de la façon suivante :</li>
+            <li><img src="images/v1.jpeg" alt="">
+                Le code ci-dessus crée/définit 3 variables a, b et c qui ont pour valeur 2, 4 et 6 respectivement.</li>
+    </ul>
+    <ul><u><strong>Les variables peuvent être d'un des types suivant :</strong></u></ul>
+    <ul>
+        <li>String : Une chaîne de caractères (± du texte)</li>
+        <li>Boolean : Une variable qui ne peut prendre que deux valeurs : vrai ou faux.</li>
+        <li>Array : Un tableau de valeurs quelconque.</li>
+        <li>Objet : Un objet.</li>
+        <li>Number : Un nombre. Il peut être entier, décimal, positif, négatif.</li>
+        <li>Symbol : Une donnée unique et non-modifiable.</li>
+
+        <p>En JavaScript, nous ne définissons pas explicitement le type d'une variable. Aussi le type d'une variable peut changer dans le temps. Mais cela ne veut pas dire qu'il n'y a pas de typage des variables.
+            Le moteur JavaScript est capable de deviner (ou "inférer") le type d'une variable à partir de sa valeur. Cette fonctionnalité donne beaucoup de flexibilité aux développeurs mais s'il veut être sûr d'un type il doit le vérifier lui même.
+            Pour vérifier le type d'une variable nous pouvons utiliser les deux mot-clés typeof et instanceof, ainsi que plusieurs méthodes fournies par les objets natifs de JavaScript.
+            typeof a  retournera le type de la variable a parmi les choix suivants :
+        </p>
+        <li>string</li>
+        <li>number</li>
+        <li>boolean</li>
+        <li>function</li>
+        <li>object</li>
+        <li>symbol</li>
+        <li>undefined</li>
+        <p>Comme vous avez surement pu le remarquer, il n'y a pas array dans la liste. En effet, Array est un object. JavaScript retourne donc object comme pour tous les autres objets.
+            Avec le mot clé instanceof, il est possible de vérifier qu'un objet "hérite d'un autre objet" ou plus littéralement si l'on retrouve le prototype d'un objet dans la chaîne de prototype d'un autre objet.
+            L'exemple est assez simple et parle de lui-même.
+            Je vous ai parlé des méthodes fournies par le langage. Au nombre de celles-ci vous allez retrouver : Array.isArray(), Number.isInteger(), etc. Ces méthodes prennent en paramètre la valeur à tester et retournent true ou false en fonction de la véracité de l'assertion.
+            En règle générale, la bonne pratique est de prioriser ces méthodes lorsqu'elles existent au lieu d'utiliser les autres mot-clés ou même vos solutions faites maison.
+        </p>
+    </ul>
+</body>
+</html>
